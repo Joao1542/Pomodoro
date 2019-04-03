@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Pomodoro</title>
+  <link rel="shortcut icon" href="pomodoro.png" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">  
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!------------ Mudando cor da aba nos navegadores mobile ----------->
+  <meta name="theme-color" content="#fc5d66">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fc5d66">
+  <meta name="msapplication-navbutton-color" content="#fc5d66">
+  <!------------------------------------------------------------------>
+</head>
+ 
+<body>
+  <div class="container" id="main-container">
+
+    <div class="row">
+      <div class="col-sm-9 mx-auto" id="heading-panel">
+        <img src="time.png" alt="pomodoro">
+        <h2> O que é "Pomodoro"? </h2>
+        <h5 class="headingText">
+          A Técnica Pomodoro é um método de gerenciamento de tempo e consiste na utilização de um cronômetro para dividir o trabalho 
+          em períodos de tempo, separados por breves intervalos. O método é baseado na ideia de que pausas frequentes podem aumentar a agilidade mental.
+
+        </h5>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-9 mx-auto" id="work-duration">
+        <h7> Duração do foco </h7>
+        <button class="btn btn-default upperpanelBtn" id="minusWorkButton">-</button>
+        <h7 id="work-display"> 25</h7>
+        <button class="btn btn-default upperpanelBtn" id="addWorkButton">+</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-9 mx-auto" id="break-duration">
+        <h7> Duração do intervalo</h7>
+        <button class="btn btn-default upperpanelBtn" id="minusBreakButton"> - </button>
+        <h7 id="break-display">5</h7>
+        <button class="btn btn-default upperpanelBtn" id=addBreakButton> + </button>
+      </div>
+    </div>
+
+    <div class="row">  
+      <div class="col-sm-9 mx-auto" id="button-panel">
+        <button type="button" class="btn btn-success" id="start" onclick="start()"> Começar </button>
+        <button type="button" class="btn btn-warning" id="pause" onclick="pause()"> Pausar </button>
+        <button type="button" class="btn btn-danger" id="resume" onclick="resume()"> Retomar </button>
+        <button type="button" class="btn btn-danger" id="reset" onclick="reset()"> Limpar </button>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-9 mx-auto" id="timer-panel">
+        <span id="showTime"> </span>
+      </div>
+    </div>  
+  </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body> 
+</html>
